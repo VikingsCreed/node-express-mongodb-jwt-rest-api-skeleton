@@ -8,7 +8,6 @@
     "url": "https://github.com/davellanedam/node-express-mongodb-jwt-rest-api-skeleton.git"
   },
   "scripts": {
-    "start": "cross-env NODE_ENV=production pm2 start server.js",
     "dev": "cross-env NODE_ENV=development nodemon server.js",
     "fresh": "npm run clean && npm run seed",
     "format": "prettier --write --config .prettierrc.json \"**/*.js\"",
