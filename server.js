@@ -72,3 +72,6 @@ app.listen(app.get('port'))
 initMongo()
 
 module.exports = app // for testing
+
+const port = process.env.PORT || 3000
+app.listen(port)
