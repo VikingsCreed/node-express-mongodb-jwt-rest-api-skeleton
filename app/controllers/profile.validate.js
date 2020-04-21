@@ -11,12 +11,6 @@ exports.updateProfile = [
     .not()
     .isEmpty()
     .withMessage('IS_EMPTY'),
-  check('lastname')
-    .exists()
-    .withMessage('MISSING')
-    .not()
-    .isEmpty()
-    .withMessage('IS_EMPTY'),
   check('country')
     .exists()
     .withMessage('MISSING')
