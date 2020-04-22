@@ -11,12 +11,6 @@ exports.createItem = [
     .not()
     .isEmpty()
     .withMessage('IS_EMPTY'),
-  check('lastname')
-    .exists()
-    .withMessage('MISSING')
-    .not()
-    .isEmpty()
-    .withMessage('IS_EMPTY'),
   check('email')
     .exists()
     .withMessage('MISSING')
@@ -60,12 +54,6 @@ exports.createItem = [
  */
 exports.updateItem = [
   check('name')
-    .exists()
-    .withMessage('MISSING')
-    .not()
-    .isEmpty()
-    .withMessage('IS_EMPTY'),
-  check('lastname')
     .exists()
     .withMessage('MISSING')
     .not()
