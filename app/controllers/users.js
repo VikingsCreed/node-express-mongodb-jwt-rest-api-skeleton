@@ -18,6 +18,7 @@ const createItem = async (req) => {
     const user = new model({
       role: req.role,
       name: req.name,
+      lastname: req.lastname,
       email: req.email,
       password: req.password,
       steamid64: req.steamid64,
