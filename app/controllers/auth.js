@@ -46,7 +46,6 @@ const setUserInfo = (req) => {
   let user = {
     _id: req._id,
     name: req.name,
-    lastname: req.lastname,
     email: req.email,
     country: req.country,
     steamid64: req.steamid64,
@@ -226,7 +225,6 @@ const registerUser = async (req) => {
   return new Promise((resolve, reject) => {
     const user = new User({
       name: req.name,
-      lastname: req.lastname,
       email: req.email,
       password: req.password,
       country: req.country,
