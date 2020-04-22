@@ -1,4 +1,5 @@
 const model = require('../models/user')
+const uuid = require('uuid')
 const { matchedData } = require('express-validator')
 const utils = require('../middleware/utils')
 const db = require('../middleware/db')
@@ -20,7 +21,8 @@ const createItem = async (req) => {
       email: req.email,
       password: req.password,
       steamid64: req.steamid64,
-      country: req.country
+      country: req.country,
+      verification: uuid.v4()
     })
     user.save((err, item) => {
       if (err) {
