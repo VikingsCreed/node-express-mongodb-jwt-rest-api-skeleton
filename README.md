@@ -6,7 +6,7 @@
 1.  Clone the project from github. Change "myproject" to your project name.
 
 ```bash
-git clone https://github.com/davellanedam/node-express-mongodb-jwt-rest-api-skeleton.git ./myproject
+git clone https://github.com/VikingsCreed/node-express-mongodb-jwt-rest-api-skeleton.git ./myproject
 ```
 
 ### Using manual download ZIP
